@@ -1,35 +1,34 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Engineer Intern",
-      company: "Tech Company",
-      location: "San Francisco, CA",
-      duration: "Jun 2024 - Aug 2024",
-      description: "Developed full-stack web applications using React and Node.js. Collaborated with senior engineers on feature implementation and code reviews.",
-      technologies: ["React", "Node.js", "TypeScript", "MongoDB"],
-      color: "from-pixel-neon to-pixel-blue-light"
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "Startup Inc",
-      location: "Remote",
-      duration: "Jan 2024 - May 2024",
-      description: "Built responsive user interfaces and improved website performance. Worked closely with design team to implement pixel-perfect designs.",
-      technologies: ["Vue.js", "CSS3", "JavaScript", "Figma"],
-      color: "from-pixel-pink to-pixel-purple"
-    },
-    {
-      title: "Web Development Intern",
-      company: "Digital Agency",
-      location: "New York, NY",
-      duration: "Sep 2023 - Dec 2023",
-      description: "Created dynamic websites for clients using modern web technologies. Gained experience in project management and client communication.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "WordPress"],
+      title: "AI Software Engineering Intern",
+      company: "Vertiv",
+      location: "Westerville, OH",
+      duration: "May 2025 - Present",
+      description: "Built intelligent data and retrieval systems that streamlined contract forecasting, automated data completion, and improved document search relevance using semantic similarity, RAG, and embedding techniques",
+      technologies: ["Snowflake", "AWS", "PyTorch", "Matillion"],
       color: "from-pixel-orange to-pixel-pink"
+    },
+    {
+      title: "AR Development Extern",
+      company: "Snap Inc.",
+      location: "Remote",
+      duration: "Mar 2024 - May 2024",
+      description: "Created a research-backed Augmented Reality Lens that reached thousands of users and drove strong daily engagement",
+      technologies: ["Snap AR Studio", "CSS3", "JavaScript", "Figma"],
+      color: "from-yellow-300 to-yellow-500"
+    },
+    {
+      title: "Full Stack Software Engineering Intern",
+      company: "Big Kitty Labs",
+      location: "Columbus, OH",
+      duration: "Sep 2023 - Aug 2024",
+      description: "Created dynamic websites for clients using technologies like RAG, FastAPI, Ruby on Rails. Gained experience in project management and client communication",
+      technologies: ["Ruby on Rails", "AWS", "FastAPI", "MySQL"],
+      color: "from-purple-500 to-purple-700"
     }
   ];
 

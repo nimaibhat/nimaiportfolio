@@ -1,5 +1,3 @@
-
-
 import { Code2, Database, Globe, Wrench } from "lucide-react";
 
 const About = () => {
@@ -11,7 +9,7 @@ const About = () => {
       color: "text-pixel-neon"
     },
     {
-      title: "Frameworks",
+      title: "Frameworks", 
       icon: <Globe className="w-5 h-5" />,
       skills: ["PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "LangChain", "Ruby on Rails", "SpringBoot", "React", "Next.js"],
       color: "text-pixel-pink"
@@ -41,20 +39,20 @@ const About = () => {
           
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-base md:text-lg lg:text-xl text-gray-200 font-mono leading-relaxed mb-8">
-              I'm a passionate software engineer with 5+ years of experience building 
-              scalable web applications and mobile solutions. I love turning complex 
-              problems into simple, beautiful, and intuitive code.
+              I've spent the past 3+ years building programming solutions that are fast, reliable, and easy to use. 
+              What really drives me is the challenge of simplifying complexity, taking a messy problem and crafting a clean,
+               thoughtful solution that just works. I have a particular interest in applications of AI and machine learning.
             </p>
             <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source,
-              or brewing the perfect cup of coffee to fuel my next coding session.
+              When I'm not coding, you'll find me playing tennis, playing pickleball with friends, reading,
+              or brewing the perfect cup of tea to fuel my next coding session.
             </p>
           </div>
         </div>
       </section>
 
       {/* Technologies Section */}
-      <section className="py-20 bg-gradient-to-b from-black/20 via-black/30 to-black/40">
+      <section id="skills" className="py-20 bg-gradient-to-b from-black/20 via-black/30 to-black/40">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 font-mono text-white">
             Technologies & Skills

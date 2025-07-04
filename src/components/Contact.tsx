@@ -11,7 +11,7 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "hello@developer.com",
+      value: "Click me!",
       href: "mailto:hello@developer.com",
       color: "text-pixel-neon",
       clickable: true
@@ -19,16 +19,16 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "@developer",
-      href: "https://github.com",
+      value: "@nimaibhat",
+      href: "https://github.com/nimaibhat",
       color: "text-pixel-pink",
       clickable: false
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      value: "/in/developer",
-      href: "https://linkedin.com",
+      value: "/in/nimai-bhat",
+      href: "https://www.linkedin.com/in/nimai-bhat/",
       color: "text-pixel-blue-light",
       clickable: false
     }

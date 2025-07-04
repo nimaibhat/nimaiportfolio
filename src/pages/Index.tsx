@@ -13,7 +13,7 @@ const Index = () => {
       <div 
         className="fixed inset-0 bg-cover bg-center bg-no-repeat pixel-art z-0"
         style={{
-          backgroundImage: `url('/lovable-uploads/10d0b345-2db7-43d6-8429-d41162a59c08.png')`
+          backgroundImage: `url('/wallpaper/10d0b345-2db7-43d6-8429-d41162a59c08.png')`
         }}
       />
       
@@ -34,10 +34,10 @@ const Index = () => {
         <footer className="bg-black/80 border-t border-pixel-neon/30 py-8 backdrop-blur-sm">
           <div className="container mx-auto px-4 text-center">
             <p className="text-gray-300 font-mono">
-              Built with <span className="text-pixel-neon">❤️</span> and lots of coffee
+              Reach out!
             </p>
             <p className="text-gray-500 font-mono text-sm mt-2">
-              © 2024 Nimai Bhat - Software Engineer Portfolio
+              © 2025 Nimai Bhat
             </p>
           </div>
         </footer>

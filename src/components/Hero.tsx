@@ -24,7 +24,7 @@ const Hero = () => {
         </h2>
         
         <p className="text-xl md:text-2xl mb-8 text-gray-200 font-mono">
-          Crafting digital experiences with code and creativity
+          Computer Science & Engineering at Ohio State University
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

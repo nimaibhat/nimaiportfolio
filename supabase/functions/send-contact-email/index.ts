@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to you (the portfolio owner)
     const emailResponse = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: ["puttabhat06@gmail.com"], // Your actual email
+      to: ["nimaigbhat@gmail.com"], // Fixed the typo here
       subject: `New Contact Form Message from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>

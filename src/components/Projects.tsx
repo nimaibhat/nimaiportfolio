@@ -6,38 +6,50 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "OpenMatch",
+      description: "Full-stack React platform to match users to open source issues based on their profile",
+      tech: ["scikit-learn", "GitHub API", "PostgreSQL", "Flask"],
       github: "#",
-      demo: "#",
+      demo: null, // No demo available
       color: "from-pixel-neon to-pixel-blue-light"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team features",
-      tech: ["Next.js", "PostgreSQL", "Socket.io", "Tailwind"],
-      github: "#",
-      demo: "#",
+      title: "LiftSense.AI",
+      description: "Dashboard implementing computer vision to detect weightlifting form and provide real-time feedback",
+      tech: ["NumPy", "MediaPipe", "Pandas", "OpenAI API"],
+      github: "https://github.com/24amishra/Hack-AI",
+      demo: "https://github.com/24amishra/Hack-AI/tree/main",
       color: "from-pixel-pink to-pixel-purple"
     },
     {
-      title: "Weather Dashboard",
-      description: "Beautiful weather dashboard with location-based forecasts and data visualization",
-      tech: ["Vue.js", "Chart.js", "Weather API", "PWA"],
-      github: "#",
-      demo: "#",
+      title: "Go CRUD Book Management",
+      description: "Lightweight, but highly scalable CRUD API project for managing books with Go",
+      tech: ["GoLang", "MongoDB", "CORS", "k6"],
+      github: "https://github.com/nimaibhat/GoCrudBookManagement",
+      demo: "https://github.com/nimaibhat/GoCrudBookManagement",
       color: "from-pixel-orange to-pixel-pink"
     },
     {
-      title: "Social Media Analytics",
-      description: "Analytics dashboard for social media metrics with automated reporting",
-      tech: ["Python", "Django", "PostgreSQL", "Chart.js"],
-      github: "#",
-      demo: "#",
+      title: "Parkinsons Prediction",
+      description: "Machine learning program that stacks multiple of the most used models to create a 95% accurate Parkinson's prediction model",
+      tech: ["Python", "scikit-learn", "SMOTE", "PyTorch"],
+      github: "https://github.com/nimaibhat/Parkinsons-Prediction",
+      demo: "https://github.com/nimaibhat/Parkinsons-Prediction",
       color: "from-pixel-blue-light to-pixel-neon"
     }
   ];
+
+  const handleGithubClick = (githubUrl: string) => {
+    if (githubUrl && githubUrl !== "#") {
+      window.open(githubUrl, '_blank');
+    }
+  };
+
+  const handleDemoClick = (demoUrl: string) => {
+    if (demoUrl) {
+      window.open(demoUrl, '_blank');
+    }
+  };
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-black/60 via-black/70 to-black/80">
@@ -77,18 +89,22 @@ const Projects = () => {
                 <div className="flex gap-4 pt-4">
                   <Button 
                     size="sm"
+                    onClick={() => handleGithubClick(project.github)}
                     className="bg-pixel-neon text-black hover:bg-pixel-blue-light hover:text-white transition-all duration-300 font-mono"
                   >
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
-                  <Button 
-                    size="sm"
-                    className="bg-pixel-neon text-black hover:bg-pixel-blue-light hover:text-white transition-all duration-300 font-mono"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </Button>
+                  {project.demo && (
+                    <Button 
+                      size="sm"
+                      onClick={() => handleDemoClick(project.demo)}
+                      className="bg-pixel-neon text-black hover:bg-pixel-blue-light hover:text-white transition-all duration-300 font-mono"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
