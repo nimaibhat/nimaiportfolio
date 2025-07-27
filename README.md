@@ -15,6 +15,6 @@ To run the project locally:
 
 ```bash
 git clone https://github.com/nimaibhat/nimaiportfolio.git
-cd nimaiporfolio
+cd nimaiportfolio
 npm install
 npm run dev
